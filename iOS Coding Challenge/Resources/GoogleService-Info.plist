@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>CLIENT_ID</key>
+    <string>697888902445-39bu562g9igi4c6f6ju2hfn3n1mbmfc7.apps.googleusercontent.com</string>
+    <key>REVERSED_CLIENT_ID</key>
+    <string>com.googleusercontent.apps.697888902445-39bu562g9igi4c6f6ju2hfn3n1mbmfc7</string>
+    <key>API_KEY</key>
+    <string>AIzaSyAZGhff9ABz9hSvEOaVjY5CmuXouXd-JdM</string>
+    <key>GCM_SENDER_ID</key>
+    <string>697888902445</string>
+    <key>PLIST_VERSION</key>
+    <string>1</string>
+    <key>BUNDLE_ID</key>
+    <string>quokkapps.nghia.dinh.coding.challenge</string>
+    <key>PROJECT_ID</key>
+    <string>quokkappcodingchallenge</string>
+    <key>STORAGE_BUCKET</key>
+    <string>quokkappcodingchallenge.appspot.com</string>
+    <key>IS_ADS_ENABLED</key>
+    <false></false>
+    <key>IS_ANALYTICS_ENABLED</key>
+    <false></false>
+    <key>IS_APPINVITE_ENABLED</key>
+    <true></true>
+    <key>IS_GCM_ENABLED</key>
+    <true></true>
+    <key>IS_SIGNIN_ENABLED</key>
+    <true></true>
+    <key>GOOGLE_APP_ID</key>
+    <string>1:697888902445:ios:b08f35ffdd9ad3693f97a4</string>
+    <key>DATABASE_URL</key>
+    <string>https://quokkappcodingchallenge-default-rtdb.asia-southeast1.firebasedatabase.app</string>
+</dict>
+</plist>

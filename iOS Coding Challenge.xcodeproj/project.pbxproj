@@ -96,9 +96,10 @@
 		BEF000972A7E97B800D1E32D /* FontSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEF000952A7E97B800D1E32D /* FontSize.swift */; };
 		BEF0009A2A7E9F5C00D1E32D /* CreateNoteStoreTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEF000992A7E9F5C00D1E32D /* CreateNoteStoreTest.swift */; };
 		BEF0009D2A7EA9E000D1E32D /* XCTestCase+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEF0009C2A7EA9E000D1E32D /* XCTestCase+Extension.swift */; };
-		BEF000A52A7EAABA00D1E32D /* iOS_Coding_Challenge_UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEF000A42A7EAABA00D1E32D /* iOS_Coding_Challenge_UITests.swift */; };
-		BEF000A72A7EAABA00D1E32D /* iOS_Coding_Challenge_UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEF000A62A7EAABA00D1E32D /* iOS_Coding_Challenge_UITestsLaunchTests.swift */; };
 		BEF000AE2A7EAC9300D1E32D /* AuthStoreTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEF000AD2A7EAC9300D1E32D /* AuthStoreTest.swift */; };
+		BEF000B02A7F517C00D1E32D /* NoteStoreTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEF000AF2A7F517C00D1E32D /* NoteStoreTest.swift */; };
+		BEF000B82A7F56A300D1E32D /* iOS_Coding_Challenge_UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEF000B72A7F56A300D1E32D /* iOS_Coding_Challenge_UITests.swift */; };
+		BEF000BA2A7F56A300D1E32D /* iOS_Coding_Challenge_UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEF000B92A7F56A300D1E32D /* iOS_Coding_Challenge_UITestsLaunchTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -116,7 +117,7 @@
 			remoteGlobalIDString = BE78E57E2A7A26FB000A7734;
 			remoteInfo = "iOS Coding Challenge (Prod)";
 		};
-		BEF000AB2A7EAAC300D1E32D /* PBXContainerItemProxy */ = {
+		BEF000BB2A7F56A300D1E32D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BE78E55E2A7A1D03000A7734 /* Project object */;
 			proxyType = 1;
@@ -174,10 +175,11 @@
 		BEF000952A7E97B800D1E32D /* FontSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontSize.swift; sourceTree = "<group>"; };
 		BEF000992A7E9F5C00D1E32D /* CreateNoteStoreTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNoteStoreTest.swift; sourceTree = "<group>"; };
 		BEF0009C2A7EA9E000D1E32D /* XCTestCase+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+Extension.swift"; sourceTree = "<group>"; };
-		BEF000A22A7EAABA00D1E32D /* iOS Coding Challenge UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iOS Coding Challenge UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		BEF000A42A7EAABA00D1E32D /* iOS_Coding_Challenge_UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOS_Coding_Challenge_UITests.swift; sourceTree = "<group>"; };
-		BEF000A62A7EAABA00D1E32D /* iOS_Coding_Challenge_UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOS_Coding_Challenge_UITestsLaunchTests.swift; sourceTree = "<group>"; };
 		BEF000AD2A7EAC9300D1E32D /* AuthStoreTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthStoreTest.swift; sourceTree = "<group>"; };
+		BEF000AF2A7F517C00D1E32D /* NoteStoreTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteStoreTest.swift; sourceTree = "<group>"; };
+		BEF000B52A7F56A300D1E32D /* iOS Coding Challenge UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iOS Coding Challenge UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BEF000B72A7F56A300D1E32D /* iOS_Coding_Challenge_UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOS_Coding_Challenge_UITests.swift; sourceTree = "<group>"; };
+		BEF000B92A7F56A300D1E32D /* iOS_Coding_Challenge_UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOS_Coding_Challenge_UITestsLaunchTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -208,7 +210,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BEF0009F2A7EAABA00D1E32D /* Frameworks */ = {
+		BEF000B22A7F56A300D1E32D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -223,7 +225,7 @@
 			children = (
 				BE78E5682A7A1D03000A7734 /* iOS Coding Challenge */,
 				BE78E6192A7CB08D000A7734 /* iOS Coding Challenge Tests */,
-				BEF000A32A7EAABA00D1E32D /* iOS Coding Challenge UITests */,
+				BEF000B62A7F56A300D1E32D /* iOS Coding Challenge UITests */,
 				BE78E5672A7A1D03000A7734 /* Products */,
 				BE78E5D52A7A43C6000A7734 /* Frameworks */,
 			);
@@ -235,7 +237,7 @@
 				BE78E5662A7A1D03000A7734 /* iOS Coding Challenge (Dev).app */,
 				BE78E5892A7A26FB000A7734 /* iOS Coding Challenge (Prod).app */,
 				BE78E6182A7CB08D000A7734 /* iOS Coding Challenge Tests.xctest */,
-				BEF000A22A7EAABA00D1E32D /* iOS Coding Challenge UITests.xctest */,
+				BEF000B52A7F56A300D1E32D /* iOS Coding Challenge UITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -447,6 +449,7 @@
 			children = (
 				BEF000992A7E9F5C00D1E32D /* CreateNoteStoreTest.swift */,
 				BEF000AD2A7EAC9300D1E32D /* AuthStoreTest.swift */,
+				BEF000AF2A7F517C00D1E32D /* NoteStoreTest.swift */,
 			);
 			path = ModelTest;
 			sourceTree = "<group>";
@@ -459,11 +462,11 @@
 			path = Extension;
 			sourceTree = "<group>";
 		};
-		BEF000A32A7EAABA00D1E32D /* iOS Coding Challenge UITests */ = {
+		BEF000B62A7F56A300D1E32D /* iOS Coding Challenge UITests */ = {
 			isa = PBXGroup;
 			children = (
-				BEF000A42A7EAABA00D1E32D /* iOS_Coding_Challenge_UITests.swift */,
-				BEF000A62A7EAABA00D1E32D /* iOS_Coding_Challenge_UITestsLaunchTests.swift */,
+				BEF000B72A7F56A300D1E32D /* iOS_Coding_Challenge_UITests.swift */,
+				BEF000B92A7F56A300D1E32D /* iOS_Coding_Challenge_UITestsLaunchTests.swift */,
 			);
 			path = "iOS Coding Challenge UITests";
 			sourceTree = "<group>";
@@ -536,22 +539,22 @@
 			productReference = BE78E6182A7CB08D000A7734 /* iOS Coding Challenge Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		BEF000A12A7EAABA00D1E32D /* iOS Coding Challenge UITests */ = {
+		BEF000B42A7F56A300D1E32D /* iOS Coding Challenge UITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BEF000A82A7EAABA00D1E32D /* Build configuration list for PBXNativeTarget "iOS Coding Challenge UITests" */;
+			buildConfigurationList = BEF000BD2A7F56A300D1E32D /* Build configuration list for PBXNativeTarget "iOS Coding Challenge UITests" */;
 			buildPhases = (
-				BEF0009E2A7EAABA00D1E32D /* Sources */,
-				BEF0009F2A7EAABA00D1E32D /* Frameworks */,
-				BEF000A02A7EAABA00D1E32D /* Resources */,
+				BEF000B12A7F56A300D1E32D /* Sources */,
+				BEF000B22A7F56A300D1E32D /* Frameworks */,
+				BEF000B32A7F56A300D1E32D /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				BEF000AC2A7EAAC300D1E32D /* PBXTargetDependency */,
+				BEF000BC2A7F56A300D1E32D /* PBXTargetDependency */,
 			);
 			name = "iOS Coding Challenge UITests";
 			productName = "iOS Coding Challenge UITests";
-			productReference = BEF000A22A7EAABA00D1E32D /* iOS Coding Challenge UITests.xctest */;
+			productReference = BEF000B52A7F56A300D1E32D /* iOS Coding Challenge UITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -572,7 +575,7 @@
 						LastSwiftMigration = 1420;
 						TestTargetID = BE78E5652A7A1D03000A7734;
 					};
-					BEF000A12A7EAABA00D1E32D = {
+					BEF000B42A7F56A300D1E32D = {
 						CreatedOnToolsVersion = 14.2;
 						TestTargetID = BE78E5652A7A1D03000A7734;
 					};
@@ -597,7 +600,7 @@
 				BE78E5652A7A1D03000A7734 /* iOS Coding Challenge (Dev) */,
 				BE78E57E2A7A26FB000A7734 /* iOS Coding Challenge (Prod) */,
 				BE78E6172A7CB08D000A7734 /* iOS Coding Challenge Tests */,
-				BEF000A12A7EAABA00D1E32D /* iOS Coding Challenge UITests */,
+				BEF000B42A7F56A300D1E32D /* iOS Coding Challenge UITests */,
 			);
 		};
 /* End PBXProject section */
@@ -630,7 +633,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BEF000A02A7EAABA00D1E32D /* Resources */ = {
+		BEF000B32A7F56A300D1E32D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -733,18 +736,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				BEF0009D2A7EA9E000D1E32D /* XCTestCase+Extension.swift in Sources */,
+				BEF000B02A7F517C00D1E32D /* NoteStoreTest.swift in Sources */,
 				BEF000AE2A7EAC9300D1E32D /* AuthStoreTest.swift in Sources */,
 				BE78E6242A7CB0E7000A7734 /* FirebaseDBTest.swift in Sources */,
 				BEF0009A2A7E9F5C00D1E32D /* CreateNoteStoreTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BEF0009E2A7EAABA00D1E32D /* Sources */ = {
+		BEF000B12A7F56A300D1E32D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BEF000A72A7EAABA00D1E32D /* iOS_Coding_Challenge_UITestsLaunchTests.swift in Sources */,
-				BEF000A52A7EAABA00D1E32D /* iOS_Coding_Challenge_UITests.swift in Sources */,
+				BEF000BA2A7F56A300D1E32D /* iOS_Coding_Challenge_UITestsLaunchTests.swift in Sources */,
+				BEF000B82A7F56A300D1E32D /* iOS_Coding_Challenge_UITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -761,10 +765,10 @@
 			target = BE78E57E2A7A26FB000A7734 /* iOS Coding Challenge (Prod) */;
 			targetProxy = BE78E6682A7CE6D6000A7734 /* PBXContainerItemProxy */;
 		};
-		BEF000AC2A7EAAC300D1E32D /* PBXTargetDependency */ = {
+		BEF000BC2A7F56A300D1E32D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = BE78E5652A7A1D03000A7734 /* iOS Coding Challenge (Dev) */;
-			targetProxy = BEF000AB2A7EAAC300D1E32D /* PBXContainerItemProxy */;
+			targetProxy = BEF000BB2A7F56A300D1E32D /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -899,6 +903,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -928,6 +933,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1050,7 +1056,7 @@
 			};
 			name = Release;
 		};
-		BEF000A92A7EAABA00D1E32D /* Debug */ = {
+		BEF000BE2A7F56A300D1E32D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -1067,7 +1073,7 @@
 			};
 			name = Debug;
 		};
-		BEF000AA2A7EAABA00D1E32D /* Release */ = {
+		BEF000BF2A7F56A300D1E32D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -1123,11 +1129,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		BEF000A82A7EAABA00D1E32D /* Build configuration list for PBXNativeTarget "iOS Coding Challenge UITests" */ = {
+		BEF000BD2A7F56A300D1E32D /* Build configuration list for PBXNativeTarget "iOS Coding Challenge UITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				BEF000A92A7EAABA00D1E32D /* Debug */,
-				BEF000AA2A7EAABA00D1E32D /* Release */,
+				BEF000BE2A7F56A300D1E32D /* Debug */,
+				BEF000BF2A7F56A300D1E32D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

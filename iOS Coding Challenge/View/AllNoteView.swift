@@ -17,11 +17,13 @@ struct AllNoteView: View {
                 ProgressView("Loading all notes...")
             case .success(let data):
                 List(data) { note in
-                    NoteItemView(store: noteStore, item: note).onAppear {
-                        noteStore.loadMore(item: note)
-                    }
+                    NoteItemView(store: noteStore, item: note)
+                        .onAppear {
+                            noteStore.loadMore(item: note)
+                        }
                 }
                 .listStyle(.plain)
+                .accessibility(identifier: "noteList")
             case .failed(let err):
                 Text("Failed to fetch notes: \(err)")
             }

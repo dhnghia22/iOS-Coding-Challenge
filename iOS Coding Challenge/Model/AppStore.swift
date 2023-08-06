@@ -15,6 +15,10 @@ class AppStore: ObservableObject {
         self.account = account
     }
     
+    func logOut() {
+        account = nil
+    }
+    
     var isLogin: Bool {
         get {
             return account != nil

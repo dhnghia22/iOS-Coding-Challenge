@@ -46,6 +46,7 @@ struct EditNoteView: View {
                     .fontSize(.regular)
                     .border(Color.gray, width: 1)
                     .disabled(!isOwner && !isCreated)
+                    .accessibility(identifier: "createNoteTextEditor")
                 Spacer()
                 if isCreated || isOwner {
                     AppButton(title: isCreated ? "Create" : "Update") {

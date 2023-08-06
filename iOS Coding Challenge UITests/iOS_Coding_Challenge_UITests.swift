@@ -2,58 +2,82 @@
 //  iOS_Coding_Challenge_UITests.swift
 //  iOS Coding Challenge UITests
 //
-//  Created by Nghia Dinh on 05/08/2023.
+//  Created by Nghia Dinh on 06/08/2023.
 //
 
 import XCTest
+import Foundation
 
 final class iOS_Coding_Challenge_UITests: XCTestCase {
-    
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-        
-        // In UI tests it is usually best to stop immediately when a failure occurs.
-        continueAfterFailure = false
-        
-        // In UI tests it’s important to set the initial state - such as interface orientation - required for your tests before they run. The setUp method is a good place to do this.
-    }
-    
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-    }
-    
+
     func testExample() throws {
         // UI tests must launch the application that they test.
         let app = XCUIApplication()
         app.launch()
         
+                
+        
+
         // Use XCTAssert and related functions to verify your tests produce the correct results.
     }
     
-    func testRenderHome() {
+    func testHello() throws {
+                        
+    }
+    
+    
+    
+    func testAllNoteView() throws {
         let app = XCUIApplication()
         app.launch()
         
         let allNotesTab = app.tabBars.buttons["All Notes"]
         allNotesTab.tap()
         
-        // Wait for the content to load
         let loadingIndicator = app.progressIndicators["Loading all notes..."]
-        let exists = NSPredicate(format: "exists == true")
+        let exists = NSPredicate(format: "exists == false")
         expectation(for: exists, evaluatedWith: loadingIndicator, handler: nil)
-        waitForExpectations(timeout: 10, handler: nil)
-        
-        // Check if the list of notes is displayed
-        XCTAssertTrue(app.tables.element.exists)
-        
-        // Tap on a note to navigate to NoteDetail
-        let firstNoteCell = app.tables.cells.element(boundBy: 0)
-        firstNoteCell.tap()
-        
-        // Verify that NoteDetail is displayed
-        XCTAssertTrue(app.staticTexts["Note Detail"].exists)
+        XCTAssertTrue(app.collectionViews["noteList"].exists)
     }
     
+    func testMyNote() throws {
+        let app = XCUIApplication()
+        app.launch()
+        app.tabBars["Tab Bar"].buttons["My Notes"].tap()
+        app.buttons["Login"].tap()
+        app.textFields["Enter text here"].tap()
+        app.textFields["Enter text here"].typeText("nghia.dinh.55")
+        app.buttons["Submit"].tap()
+        let loadingIndicator = app.progressIndicators["Loading all notes..."]
+        let exists = NSPredicate(format: "exists == false")
+        expectation(for: exists, evaluatedWith: loadingIndicator, handler: nil)
+        waitForExpectations(timeout: 10, handler: nil)
+        XCTAssertTrue(app.collectionViews["myNotes"].exists)
+    }
+    
+    func testCreateNote() throws {
+        let app = XCUIApplication()
+        app.launch()
+        app.tabBars["Tab Bar"].buttons["My Notes"].tap()
+        app.buttons["Login"].tap()
+        app.textFields["Enter text here"].tap()
+        app.textFields["Enter text here"].typeText("nghia.dinh.55")
+        app.buttons["Submit"].tap()
+        app.navigationBars["nghia.dinh.55"].buttons["Add"].tap()
+        app.textViews["createNoteTextEditor"].tap()
+        app.textViews["createNoteTextEditor"].typeText("ui test create note")
+        app.buttons["Create"].tap()
+        let alert = app.alerts["Alert"]
+        XCTAssertTrue(alert.exists)
+        
+        // Verify the alert message
+        let alertMessage = alert.staticTexts["Create note successfuly"]
+        XCTAssertTrue(alertMessage.exists)
+        XCTAssertEqual(alertMessage.label, "Create note successfuly")
+                
+    }
+    
+
     func testLaunchPerformance() throws {
         if #available(macOS 10.15, iOS 13.0, tvOS 13.0, watchOS 7.0, *) {
             // This measures how long it takes to launch your application.
@@ -62,4 +86,6 @@ final class iOS_Coding_Challenge_UITests: XCTestCase {
             }
         }
     }
+    
+    
 }

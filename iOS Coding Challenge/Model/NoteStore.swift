@@ -41,7 +41,7 @@ class NoteStore: BaseObservableObject {
     }
     
     
-    @MainActor private func loadMoreNotes() {
+    @MainActor func loadMoreNotes() {
         guard !isLoadingPage && canLoadMorePages else {
             return
         }
@@ -50,7 +50,7 @@ class NoteStore: BaseObservableObject {
         let task = Task {
             do {
                 let notes = try await repository.loadmoreAllNotes(pageSize: 20, timestamp: -timestamp)
-                canLoadMorePages = allNotes.count < 20
+                canLoadMorePages = allNotes.count == 20
                 allNotes.append(contentsOf: notes)
                 allNoteState = .success(data: allNotes)
                 isLoadingPage = false

@@ -2,7 +2,7 @@
 //  iOS_Coding_Challenge_UITestsLaunchTests.swift
 //  iOS Coding Challenge UITests
 //
-//  Created by Nghia Dinh on 05/08/2023.
+//  Created by Nghia Dinh on 06/08/2023.
 //
 
 import XCTest

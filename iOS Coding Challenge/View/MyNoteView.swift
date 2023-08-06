@@ -23,6 +23,13 @@ struct MyNoteView: View {
         }
         .navigationBarTitle(appStore.account?.userName ?? "My Notes", displayMode: .inline)
         .navigationBarItems(
+            trailing: Button(action: {
+                appStore.logOut()
+            }, label: {
+                Image(systemName: "person.crop.circle.badge.minus")
+            }).opacity(appStore.account == nil ? 0 : 1.0 )
+        )
+        .navigationBarItems(
             trailing: NavigationLink(destination: appRoute.getScreen(from: .noteDetail(note: nil, store: noteStore)), isActive: $isLinkActive, label: {
                 Button(action: {
                     isLinkActive = true
@@ -52,12 +59,17 @@ struct MyNoteView: View {
             case .loading:
                 ProgressView("Loading your notes...")
             case .success(let data):
-                List {
-                    ForEach(data) { element in
-                        NoteItemView(store: noteStore, item: element)
+                if data.count == 0 {
+                    Text("Empty Note").fontSize(.regular)
+                } else {
+                    List {
+                        ForEach(data) { element in
+                            NoteItemView(store: noteStore, item: element)
+                        }
                     }
+                    .listStyle(.plain)
+                    .accessibility(identifier: "myNotes")
                 }
-                .listStyle(.grouped)
             case .failed(let err):
                 Text("Failed to fetch notes: \(err)")
             }

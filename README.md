@@ -86,4 +86,6 @@ https://github.com/dhnghia22/iOS-Coding-Challenge/assets/20497888/c2fa9c55-4878-
 4. Localize text is hard code in view, need to centralize all text for manage.
 5. VM is simple, easy to use, but it can be complexity in the furure, need to design or use some state management to handle state in store.
 
+# Contact
+If you have any question about this project, please contact me via email: dhnghia22@gmail.com
    

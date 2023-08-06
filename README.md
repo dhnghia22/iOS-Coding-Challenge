@@ -82,9 +82,10 @@ https://github.com/dhnghia22/iOS-Coding-Challenge/assets/20497888/c2fa9c55-4878-
 # Known issues
 1. My AppRoute is simple just use for create new View, not routing, need to implement routing mechanism easy to use, manage all route in app, can work with deeplink, univerlink.
 2. Database format is not support paging when fectch user note, only support paging for all notes.
-3. UI simple.
-4. Localize text is hard code in view, need to centralize all text for manage.
-5. VM is simple, easy to use, but it can be complexity in the furure, need to design or use some state management to handle state in store.
+3. User login is not require password, and not save to local storage.
+4. UI simple.
+5. Localize text is hard code in view, need to centralize all text for manage.
+6. VM is simple, easy to use, but it can be complexity in the furure, need to design or use some state management to handle state in store.
 
 # Contact
 If you have any question about this project, please contact me via email: dhnghia22@gmail.com
